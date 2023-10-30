@@ -1,38 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+button {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+  width: 120px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
 .App {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+#tournament-name-input {
+  width: 145px; 
+}
+
+#small-button {
+  width: 60px; 
+  height: 30px; 
+  font-size: small;
+  line-height: 2px;
+  padding-left: 10px;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin: 20px 0;
+  color: #333;
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 5px;
+  font-size: 1rem;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="text"] {
+  display: block;
+  margin: 0 auto 10px; 
+  width: 20%; 
+}
+
+input[type="number"] {
+  width: 5rem; 
+}
+
+select {
+  padding: 5px;
+  font-size: 1rem;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+p {
+  font-size: 1rem;
+  color: #007bff;
+}
+
+div > button {
+  display: block;
+  margin: 10px auto;
+}
+
+.matches {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.matches > div {
+  width: 45%;
+  margin: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #ccc;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logout-button {
+  background-color: #ff0000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.success-message {
+  color: #009900;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.matches input[type="number"] {
+  width: 40px; 
+  height: 20px; 
+  padding: 5px;
+  font-size: 1rem;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#table-container {
+  display: grid;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+table {
+  border-collapse: collapse;
+  width: 100%; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 8px;
+  text-align: center;
 }

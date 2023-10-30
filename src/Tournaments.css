@@ -1,0 +1,42 @@
+.Tournaments {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .Tournaments h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .Tournaments form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Tournaments label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .Tournaments input,
+  .Tournaments textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .Tournaments button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .Tournaments button:hover {
+    background-color: #0056b3;
+  }
+  
